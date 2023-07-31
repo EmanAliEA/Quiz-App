@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="quizApp.css">
+        <script src="quizApp.js"></script>
+    </head>
+    <body>
+        <div id="StartHome">
+            <p id="Title">Quiz App</p>
+            <p id="quesMark">&quest;</p>
+            <button id="start" onclick="display()">Start Quiz</button>
+        </div>
+        <div id="home" hidden>
+            <p id="score">Score: <span id="scoreNum">0</span> /5</p>
+            <p id="QuesNum">Question: <span id="ques_Num">1</span> /5</p>
+            <div id="question_answer">
+                <p id="question"></p>
+                <ul id="answer">
+                    <li id="1" onclick="checkAnswer('1')"></li>
+                    <li id="2" onclick="checkAnswer('2')"></li>
+                    <li id="3" onclick="checkAnswer('3')"></li>
+                    <li id="4" onclick="checkAnswer('4')"></li>
+                </ul>
+            </div>
+            <span id="nextQues" >&rarr;</span>
+        </div>
+        <div id="finish" hidden>
+            <span id="finishScore"></span>
+            <span id="finishQues"></span>
+            <span id="correctQues" onclick="HomeA()">Congratulations!</span>
+            <span id="again" onclick="again()"> again </span>
+        </div>
+    </body>
+</html>
+
