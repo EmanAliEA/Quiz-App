@@ -119,7 +119,7 @@ function again(){
     ques_Num =1
     correctQues = 0;
     scoreNum = 0
-    // document.getElementById("finish").hidden = true;
+    document.getElementById("finish").hidden = true;
     // document.getElementById("home").hidden = false;
     display();
      
